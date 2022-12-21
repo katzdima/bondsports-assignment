@@ -12,6 +12,7 @@ const ColorChanger = ({ backgroundColor, setBackgroundColor }: AppProps): JSX.El
                 Object.values(Colors).map((color) => {
                     return (
                         <div 
+                            key={color}
                             style={{backgroundColor: color}}
                             className={`color-tile ${color === backgroundColor ? 'selected' : ''}`}
                             onClick={() => setBackgroundColor(color)} >
