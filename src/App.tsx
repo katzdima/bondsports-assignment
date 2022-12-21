@@ -1,11 +1,16 @@
 import React from 'react';
+import MainContainer from 'components/MainContainer'
+import { Provider } from 'react-redux'
+import store from 'stateManagement/configurations/store'
 import './App.css';
 
-function App() {
+function App(): JSX.Element {
   return (
-    <div className="App">
-      Hello world
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <MainContainer />
+      </div>
+    </Provider>
   );
 }
 

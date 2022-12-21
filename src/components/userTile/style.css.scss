@@ -1,0 +1,29 @@
+.user-tile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    background-color: grey;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    .name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 250px;
+    }
+
+    button {
+        border-radius: 5px;
+        background-color: lightgrey;
+        height: 18px;
+        margin-top: 2px;
+    }
+}
+
+.user-tile.favorite {
+    background-color: pink;
+    color: green;
+}
